@@ -1,0 +1,10 @@
+config BR2_PACKAGE_PYTHON_ADAFRUIT_GPIO
+	bool "python-adafruit-gpio"
+	select BR2_PACKAGE_PYTHON_ADAFRUIT_PUREIO # runtime
+	select BR2_PACKAGE_PYTHON_SPIDEV # runtime
+	help
+	  Library to provide a cross-platform GPIO interface on the
+	  Raspberry Pi and Beaglebone Black using the RPi.GPIO and
+	  Adafruit_BBIO libraries.
+
+	  https://github.com/adafruit/Adafruit_Python_GPIO/

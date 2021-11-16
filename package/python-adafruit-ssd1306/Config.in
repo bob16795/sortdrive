@@ -1,0 +1,8 @@
+config BR2_PACKAGE_PYTHON_ADAFRUIT_SSD1306
+	bool "python-adafruit-ssd1306"
+	select BR2_PACKAGE_PYTHON_ADAFRUIT_GPIO # runtime
+	help
+	  Python library to use SSD1306-based 128x64 or 128x32 pixel
+	  OLED displays with a Raspberry Pi or Beaglebone Black.
+
+	  https://github.com/adafruit/Adafruit_Python_SSD1306/

@@ -1,0 +1,5 @@
+# md5, sha256 from https://pypi.org/pypi/luma.core/json
+md5	c049eabcdd50c4c1e630282c058e18f8  luma.core-1.14.0.tar.gz
+sha256	1501901f08c279abb9a5f1b76347955d6a15238c1e86e055aef96acd3e2e4215  luma.core-1.14.0.tar.gz
+# Locally computed sha256 checksums
+sha256	fe8e4e3171272f5d35aa111cad7a00af5efc80b552270f55d69354de8f22519a  LICENSE.rst

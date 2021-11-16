@@ -1,0 +1,32 @@
+#!/bin/sh
+
+set -e
+
+start() {
+    export PISO_BASE_MOUNT="/mnt/"
+    export PISO_SCRIPTS_PATH="/opt/piso_scripts/"
+
+    #TODO: fix with popen flags?
+    export LVM_SUPPRESS_FD_WARNINGS=1
+
+    /bin/echo "Setting up drive"
+    /bin/sh $PISO_SCRIPTS_PATH/setup.sh
+
+    /bin/echo "Starting pISO..."
+    if [ -f "/boot/piso_debug_log" ]; then
+        export PISO_LOG_PATH="/boot/piso.log"
+    else
+        export PISO_LOG_PATH="/tmp/piso.log"
+    fi
+    /usr/bin/pISO 2>&1 | /usr/bin/tee $PISO_LOG_PATH &
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    *)
+        exit 1
+esac
+
+exit $?

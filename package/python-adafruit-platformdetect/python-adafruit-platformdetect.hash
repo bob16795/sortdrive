@@ -1,0 +1,5 @@
+# md5, sha256 from https://pypi.org/pypi/Adafruit-PlatformDetect/json
+md5	23871a545e21b2fe19357fe70bdce655  Adafruit-PlatformDetect-2.13.3.tar.gz
+sha256	97d5fe965c74cfd1c39f1c5c06bad34cb9d12c7fbafcf775e4376aad4c76e288  Adafruit-PlatformDetect-2.13.3.tar.gz
+# Locally computed sha256 checksums
+sha256	50e0c3b5b4486be0ed420639f8a1f6f115f29101feee6bcd954a4b81db04d0f3  LICENSE

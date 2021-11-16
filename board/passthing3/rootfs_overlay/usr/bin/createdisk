@@ -1,0 +1,14 @@
+#!/bin/sh
+FILE="/root/disk.img"
+
+# create file
+SIZE=$(expr $(df -m / | awk '{print $2}' | tail -1) - 1000)
+FILE="/root/disk.img"
+fallocate -l ${SIZE}M $FILE
+mkdosfs $FILE
+
+# copy default files into disk
+mount $FILE /mnt
+cp -rf /etc/defaultdrive/* /mnt
+sync
+umount /mnt

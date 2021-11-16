@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "" > /sys/kernel/config/usb_gadget/g2/UDC
+ls /sys/class/udc > /sys/kernel/config/usb_gadget/g1/UDC
+
+rm -r /sys/kernel/config/usb_gadget/g2

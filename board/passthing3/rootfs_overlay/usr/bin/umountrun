@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "" > /sys/kernel/config/usb_gadget/g1/UDC
+umount /root/disk.d
+mount -o loop /root/disk.img /root/disk.d
+
+$1
+
+umount /root/disk.d
+mount -o ro,loop /root/disk.img /root/disk.d
+ls /sys/class/udc > /sys/kernel/config/usb_gadget/g1/UDC
