@@ -22,8 +22,8 @@ gpu_mem_1024=100
 # enable dwc2
 dtoverlay=dwc2
 
-framebuffer_width=112
-framebuffer_height=250
+framebuffer_width=128
+framebuffer_height=32
 
 
 # fixes rpi3 ttyAMA0 serial console

@@ -1,0 +1,8 @@
+stty: standard input
+/root/disk.d/scr/always/filesort.pyrunning
+  files sorted
+[1A[0G[-8G[1;34m[[1;32m  OK  [1;34m][0;39m
+/root/disk.d/scr/next/*running
+  /root/disk.d/scr/init.sh: line 14: /root/disk.d/scr/next/*: not found
+[1A[0G[-8G[1;34m[[1;32m  OK  [1;34m][0;39m
+mv: can't rename '/root/disk.d/scr/next/*': No such file or directory
